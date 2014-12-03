@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <title>Foodly</title>
-<!--<script type="text/javascript" src="cordova.js"></script>-->
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/CheckIn.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/CheckIn.css" />
 </head>
     
     <body>
@@ -50,7 +52,11 @@
 </div>
 
 <div data-role="page" id="checkInPage">
-<p class="text2">Check In Page</p>
+	<div class="top">		
+		<button type="button" style="margin-top:40px;" class="btn btn-primary btn-block" onClick="CheckInBTN()">Check In</button>
+	</div>
+	
+	
 </div>
 
 <div data-role="page" id="menuPage">

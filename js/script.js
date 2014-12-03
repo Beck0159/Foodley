@@ -73,7 +73,8 @@ function pageCheckIn() {
 	 
 	 backBtn = document.querySelector(".backBtn");
 	 backBtn.addEventListener("click", homePageDeleteBtn);
-	
+	// Connors Code
+	checkInLogic();
 	function homePageDeleteBtn() {
 	 header.removeChild(backButton);
 	 home.style.display = "block";
