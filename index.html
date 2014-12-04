@@ -6,6 +6,7 @@
 <title>Foodly</title>
 <script type="text/javascript" src="cordova.js"></script>
 <script src="js/CheckIn.js"></script>
+<script src="js/CountDown.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/CheckIn.css" />
@@ -52,8 +53,16 @@
 </div>
 
 <div data-role="page" id="checkInPage">
-	<div class="top">		
-		<button type="button" style="margin-top:40px;" class="btn btn-primary btn-block" onClick="CheckInBTN()">Check In</button>
+	<div class="top">
+		<div class="card">
+			  <ul class="table-view">
+				<li class="table-view-cell table-view-divider">Reservation</li>
+				<li class="table-view-cell">4 Seats, 1700</li>
+				<li class="table-view-cell table-view-divider">Aproximate Wait Time</li>
+				<li id="timer" class="table-view-cell">Press Check In When Arived</li>
+			  </ul>
+		</div>
+		<button type="button" style="margin-top:40px;" class="btn btn-primary btn-block" onClick="checkInBTN()">Check In</button>
 	</div>
 	
 	
