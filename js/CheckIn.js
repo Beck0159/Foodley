@@ -10,6 +10,8 @@ function checkInLogic(){
 	//Determine if they have arrived at the location
 	//Approximate wait times
 	//Push notification to notify when table is ready
+
+	
 }
 
 function checkInBTN(){
@@ -80,7 +82,7 @@ function checkInBTN(){
 
 function setTimer(){
 	
-	var waitTime = 10; // wait times in minutes
+	var waitTime = 1; // wait times in minutes
 	
 	
 	if(timer != null){
@@ -101,7 +103,7 @@ function setTimer(){
 				console.log('Timer Has Ended');
 				// send push notification
 				
-				
+				window.plugin.notification.local.add({ message: 'Table is Ready' });
 			}
 			
 		}, 1000);
