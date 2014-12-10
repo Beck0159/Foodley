@@ -1,12 +1,16 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <title>Foodly</title>
-<!--<script type="text/javascript" src="cordova.js"></script>-->
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/CheckIn.js"></script>
+<script src="js/CountDown.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="js/reservationData.js"></script>
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/CheckIn.css" />
 </head>
     
     <body>
@@ -50,7 +54,19 @@
 </div>
 
 <div data-role="page" id="checkInPage">
-<p class="text2">Check In Page</p>
+	<div class="top">
+		<div class="card">
+			  <ul class="table-view">
+				<li class="table-view-cell table-view-divider">Reservation</li>
+				<li id="reservationInfo" class="table-view-cell">Check In First</li>
+				<li class="table-view-cell table-view-divider">Aproximate Wait Time</li>
+				<li id="timer" class="table-view-cell">Press Check In When Arived</li>
+			  </ul>
+		</div>
+		<button id="checkInBTN" type="button" style="margin-top:40px;" class="btn btn-positive btn-block" onClick="checkInBTN()">Check In</button>
+	</div>
+	
+	
 </div>
 
 <div data-role="page" id="menuPage">
